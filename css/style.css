@@ -36,12 +36,12 @@ p {
 .wrapper {
   position: relative;
   width: 1470px;
-  padding-top: 57px;
   margin: 0 auto;
 }
 
 .header-wrapper {
-  padding-bottom: 900px;
+  padding-top: 57px;
+  padding-bottom: 1090px;
 }
 
 .nav__main {
@@ -122,11 +122,22 @@ p {
   width: 940px;
 }
 
-.header__title {
+.section-title {
   padding: 0;
   margin: 0;
   font-size: 48px;
   line-height: 18px;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 18px;
+  color: #4b5863;
+  text-align: center;
+}
+
+.header__title {
   margin-bottom: 42px;
 }
 
@@ -134,12 +145,10 @@ p {
   width: 520px;
   margin: 0 auto;
   margin-bottom: 82px;
-  font-size: 18px;
-  line-height: 18px;
-  color: #4b5863;
 }
 
-.header__button {
+.header__button,
+.section-button {
   width: fit-content;
   margin: 0 auto;
   padding-top: 20px;
@@ -156,9 +165,105 @@ p {
   background-color: #ffffff;
 }
 
+.section-button:hover {
+  color: #4c43ff;
+}
+
+.section-button:active {
+  color: #4c43ff;
+  opacity: 0.55;
+}
+
 .header {
   background-image: url(../img/header-photo.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: 433px;
+}
+
+.adv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.adv .section-text {
+  margin-bottom: 30px;
+}
+
+.adv .section-title {
+  margin-bottom: 80px;
+}
+
+.adv__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 95px;
+  padding: 0;
+}
+
+.adv__item {
+  text-align: center;
+}
+
+.adv__title {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 90px;
+  margin-bottom: 45px;
+}
+
+.adv__text {
+  padding: 0 50px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4b5863;
+}
+
+.adv__item--one::before {
+  position: absolute;
+  content: "";
+  height: 47px;
+  width: 50px;
+  top: 0px;
+  left: 155px;
+  background-image: url(../img/icon-adv1.png);
+  background-repeat: no-repeat;
+}
+
+.adv__item--two::before {
+  position: absolute;
+  content: "";
+  height: 47px;
+  width: 50px;
+  top: 0px;
+  left: 155px;
+  background-image: url(../img/icon-adv2.png);
+  background-repeat: no-repeat;
+}
+
+.adv__item--three::before {
+  position: absolute;
+  content: "";
+  height: 47px;
+  width: 50px;
+  top: 0px;
+  left: 155px;
+  background-image: url(../img/icon-adv3.png);
+  background-repeat: no-repeat;
+}
+
+.adv__item--four::before {
+  position: absolute;
+  content: "";
+  height: 47px;
+  width: 50px;
+  top: 0px;
+  left: 155px;
+  background-image: url(../img/icon-adv4.png);
+  background-repeat: no-repeat;
 }
